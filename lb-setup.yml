@@ -29,15 +29,14 @@
         state: started
         enabled: yes
 
-handlers:
-
-  - name: restart firewalld service
-    service:
-      name: firewalld
-      state: restarted
-      enabled: yes
-  - name: restart haproxy service
-    service:
-      name: haproxy
-      state: restarted
-      enabled: yes
+  handlers:
+    - name: restart firewalld service
+      service:
+        name: firewalld
+        state: restarted
+        enabled: yes
+    - name: restart haproxy service
+      service:
+        name: haproxy
+        state: restarted
+        enabled: yes
