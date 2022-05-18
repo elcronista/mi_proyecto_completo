@@ -7,7 +7,7 @@
       - httpd
       - mod_wsg1
     apache_test_message: "This is a test message"
-    apache_max_keep_alive _requests: 115
+    apache_max_keep_alive_requests: 115
   tasks:
     - name: Install the apache web server
       yum:
