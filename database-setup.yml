@@ -5,7 +5,7 @@
   tasks:
     - name: Install MariaDB
       package:
-        name: mariadb- server
+        name: mariadb-server
         state: installed
     - name: Start MariaDB
       service:
